@@ -16,21 +16,22 @@ header {
 .container {
   padding-top: 20px;
   padding-bottom: 20px;
+  margin: auto;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   .container {
     width: 750px;
   }
-} */
+}
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .container {
     width: 950px;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1180px;
   }
@@ -39,11 +40,10 @@ header {
 /* end components */
 
 /* start header */
-.container {
+header .container {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid black;
-  align-items: center;
 }
 
 nav {
@@ -58,8 +58,7 @@ nav > i:first-child {
 
 /* icon search */
 nav div i {
-  padding-left: 10px;
-  margin: 6px;
+  padding-left: 20px;
 }
 
 /* list */
@@ -71,12 +70,10 @@ nav ul {
   justify-content: space-between;
   align-items:center;
 }
-
-/* list items */
-nav ul li {
-  padding: 10px;
-  border-bottom: 1px solid black;
-}
+  /* style items of the list */
+  nav ul li {
+    padding: 10px;
+  }
 
 /* small screens */
 @media (max-width: 768px) {
@@ -84,7 +81,6 @@ nav ul li {
     display: none;
     background-color: blue;
     width: 100vw;
-    height: 250px;
     position: absolute;
     left: 0;
     top: 96px;
@@ -96,6 +92,10 @@ nav ul li {
 
   /* display links on medium - big screens */
   nav i:hover ~ ul {
+    display: block;
+  }
+
+  nav ul:hover {
     display: block;
   }
 
@@ -122,10 +122,12 @@ nav ul li {
 /* serach icon container */
 .search {
   border-left: 1px solid black;
+  margin: 10px;
 }
 
 .search i {
   font-size: 1.3rem;
+
 }
 
 .logo {
