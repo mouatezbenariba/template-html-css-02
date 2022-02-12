@@ -1,6 +1,11 @@
 /* start global variables */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 :root {
-  font-size: 16px;
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
 }
 
 body {
@@ -9,15 +14,6 @@ body {
 
 /* end global variables */
 /* start components */
-header {
-  margin: 0px 20px;
-}
-
-.container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: auto;
-}
 
 @media (min-width: 768px) {
   .container {
@@ -40,12 +36,32 @@ header {
 /* end components */
 
 /* start header */
+header {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width:768px) {
+  header {
+    width: 100%;
+  }
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.589);
+  align-items: center;
 }
 
+header .logo img {
+  height: 40px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -70,16 +86,26 @@ nav ul {
   justify-content: space-between;
   align-items:center;
 }
+nav ul li {
+  padding: 40px 10px;
+}
   /* style items of the list */
-  nav ul li {
-    padding: 10px;
+  nav ul li a{
+    padding: 40px 10px;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: white;
   }
+
 
 /* small screens */
 @media (max-width: 768px) {
-  nav ul {
+  .logo {
+    padding: 15px 0;
+  }
+  header nav ul {
     display: none;
-    background-color: blue;
+    background-color: rgba(0, 0, 0, 0.431);
     width: 100vw;
     position: absolute;
     left: 0;
@@ -88,40 +114,44 @@ nav ul {
     flex-direction: column;
     justify-content: space-evenly;
     display: none;
+    z-index: 3;
   }
-
   /* display links on medium - big screens */
-  nav i:hover ~ ul {
+  header nav i:hover ~ ul {
     display: block;
   }
-
-  nav ul:hover {
-    display: block;
-  }
-
   /* focus first item of the list */
-  nav ul li:first-child {
-    color: violet;
-    border-color: violet;
+  header nav ul li:first-child {
+    color: var(--main-color);
+    border-color: var(--main-color);
   }
-
   /* style items of the list */
-  nav ul li {
+  header nav ul li {
     padding: 10px;
-    border-bottom: 1px solid black;
+    transition: 0.5s;
   }
-
   /* style the menu icon */
-  nav > i:first-child {
+  header nav > i:first-child {
     display: block;
     font-size: 1.25rem;
     padding-right: 18px;
   }
+
+  nav ul li:first-child a{
+    padding: 10px;
+    color: var(--main-color);
+  }
+
+  nav ul li:first-child {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+  }
+
 }
 
 /* serach icon container */
 .search {
-  border-left: 1px solid black;
+  border-left: 1px solid white;
   margin: 10px;
 }
 
@@ -130,10 +160,115 @@ nav ul {
 
 }
 
-.logo {
-  width: 135px;
-}
-.logo img {
-  width: 100%;
-}
 /* end header */
+/* start landing */
+
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/landing.webp);
+  background-size: cover;
+  filter: brightness(0.4);
+}
+
+
+.landing .intro {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  background-color: rgb(15 116 143 / 70%);
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  color: white;
+}
+
+@media screen and (min-width:768px) {
+  .landing .intro {
+    width: 50%;
+  }
+}
+
+.landing .intro h2 {
+  line-height: 2.6rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.landing .intro p {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2;
+  margin: 0;
+}
+
+.landing .bullets{
+  display: flex;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+}
+
+.landing .bullets li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.landing .bullets li:nth-child(2) {
+  background-color: var(--main-color);
+}
+
+/* right arrow */
+.landing i:first-of-type {
+  position: absolute;
+  z-index: 2;
+  color: #ddd;
+  font-size: 1.7rem;
+  right: 3%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+}
+
+/* left arrow */
+.landing i:last-of-type {
+  position: absolute;
+  z-index: 2;
+  color: #ddd;
+  font-size: 1.7rem;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+@media screen and (max-width:768px) {
+  .landing i {
+    display: none;
+  }
+}
+
+/* end landing */
