@@ -27,6 +27,47 @@ section:not(.landing) {
   padding-right: 15px;
 }
 
+.main-heading h2 {
+  position: relative;
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.main-heading h2 + p {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.main-heading h2::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  top: 67px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  z-index: 1;
+}
+
+.main-heading h2::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 131px;
+  border: 1px solid black;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -274,50 +315,6 @@ header nav .search i {
 
 /* start services */
 
-/* .services .main-heading {
-
-} */
-
-.services .main-heading h2 {
-  position: relative;
-  text-align: center;
-  font-weight: normal;
-  font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 80px;
-}
-
-.services .main-heading h2 + p {
-  text-align: center;
-  margin-bottom: 70px;
-}
-
-.services .main-heading h2::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid black;
-  top: 67px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  z-index: 1;
-}
-
-.services .main-heading h2::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 131px;
-  border: 1px solid black;
-  top: 75px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .services .services-container .srv-box {
   display: flex;
   flex-wrap: wrap;
@@ -361,6 +358,164 @@ header nav .search i {
   color: #777;
   margin-left: 35px;
 }
-
-
 /* end services */
+/* start design  */
+.design {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+
+}
+
+.design::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000ba;
+  background-image: url(/images/design-features.webp);
+  filter: brightness(0.4);
+}
+.design .text {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 50px;
+  background-color: rgb(15 116 143 / 70%);
+  color: white;
+}
+
+@media screen and (min-width:768px) {
+  .design .text {
+    width: 50%;
+  }
+}
+
+.design .text h3 {
+  margin: 0 0 40px;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.design .text ul {
+  padding: 0;
+  margin: 0;
+}
+
+.design .text ul li {
+  padding: 15px;
+  list-style: none;
+}
+
+.design .text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f108";
+  font-weight: 900;
+  margin-right: 20px;
+  position: relative;
+  top: 1px;
+
+}
+
+
+.design .image {
+  position: absolute;
+  top: 33%;
+}
+
+@media screen and (max-width:768px) {
+  .design .image {
+    display: none;
+  }
+}
+/* end design  */
+/* start portfolio */
+
+.portfolio ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  text-transform: capitalize;
+  padding: 0;
+}
+
+.portfolio ul li{
+  padding: 10px;
+  font-weight: 400;
+}
+
+.portfolio ul li:first-child{
+  background-color: var(--main-color);
+  color: white;
+}
+
+.imgscontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.imgscontainer .box {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.imgscontainer .box img {
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+@media screen and (min-width:768px) {
+  .imgscontainer .box {
+    width: 50%;
+  }
+  .imgscontainer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .imgscontainer .box {
+    width: calc(100% / 4);
+  }
+  .imgscontainer {
+      flex-direction: row;
+  }
+}
+
+.imgscontainer .box:hover img {
+  transform: rotateZ(5deg) scale(1.1);
+}
+
+.imgscontainer .box .caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  padding: 2px;
+  background-color: white;
+  line-height: 2;
+  transition-duration: 0.3s;
+}
+
+.imgscontainer .box:hover .caption {
+  height: 80px;
+}
+
+.imgscontainer .box .caption h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.imgscontainer .box .caption p {
+  margin: 0;
+  font-weight: normal;
+  color: var(--main-color);
+}
+/* end portfolio */
