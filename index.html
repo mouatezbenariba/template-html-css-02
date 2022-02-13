@@ -12,6 +12,10 @@
   <link rel="stylesheet" href="/css/normalize.css">
   <!-- FontAwsome Library -->
   <link rel="stylesheet" href="/css/all.css">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
 <body>
@@ -22,14 +26,16 @@
         <img src="/images/logo.webp" alt="">
       </div>
       <nav>
-        <i class="fas fa-bars toggle-menu"></i>
+        <div class="menu">
+          <i class="fas fa-bars toggle-menu"></i>
+        </div>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="search">
           <i class="fas fa-search"></i>
@@ -39,7 +45,7 @@
   </header>
   <!-- end header  -->
   <!-- start landing  -->
-  <section class="landing">
+  <section class="landing" id="home">
     <div class="container">
       <div class="intro">
         <h2>
@@ -61,5 +67,45 @@
     </div>
   </section>
   <!-- end landing -->
+  <!-- start services  -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="main-heading">
+        <h2>SERVICES</h2>
+        <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>
+      </div>
+      <div class="services-container">
+        <div class="srv-box">
+          <i class="fas fa-desktop fa-3x"></i>
+          <div class="text">
+            <h3>Vorem amet intuitive</h3>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+          </div>
+        </div>
+        <div class="srv-box">
+          <i class="fas fa-cog fa-3x"></i>
+          <div class="text">
+            <h3>Vorem amet intuitive</h3>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+          </div>
+        </div>
+        <div class="srv-box">
+          <i class="fas fa-pencil-ruler fa-3x"></i>
+          <div class="text">
+            <h3>Vorem amet intuitive</h3>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+          </div>
+        </div>
+        <div class="srv-box">
+          <i class="fas fa-camera fa-3x"></i>
+          <div class="text">
+            <h3>Vorem amet intuitive</h3>
+            <p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end services  -->
 </body>
 </html>
