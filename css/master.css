@@ -240,7 +240,7 @@ header nav .search i {
   transform: translateY(-50%);
   width: 100%;
   padding: 50px;
-  background-color: rgb(15 116 143 / 70%);
+  background-color: var(--transparent-color);
   color: white;
 }
 
@@ -292,10 +292,10 @@ header nav .search i {
 
 .landing i:first-of-type, .landing i:last-of-type {
   position: absolute;
+  top: 50%;
   z-index: 1;
   color: #ddd;
   font-size: 1.7rem;
-  top: 50%;
 }
 
 .landing i:first-of-type {
@@ -320,46 +320,58 @@ header nav .search i {
 .services .services-container .srv-box {
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   margin-bottom: 40px;
-  flex-direction: column;
+  text-align: center;
+  line-height: 2;
+  justify-content: center;
 }
 
 @media screen and (min-width:768px) {
-  .services .services-container .srv-box{
+  .services .services-container .srv-box {
     flex-direction: row;
-    align-items: center;
+    text-align: left;
+  }
+  
+  .services .services-container .srv-box i {
+    font-size: 50px;
+    align-self: center;
   }
 
-  @media screen and (min-width:992px) {
-    .services .services-container .srv-box {
-      width: 46%;
-      margin: 10px;
-      display: inline-flex;
-      text-align: left;
-    }
-  }
   .services .services-container .srv-box .text {
     width: calc(100% - 57px);
   }
-  
+
+  .services .services-container .srv-box p {
+    color: #777;
+    margin-left: 35px;
+  }
+  .services .services-container .srv-box h3 {
+    margin-left: 35px;
+  }
 }
+
+  @media screen and (min-width:992px) {
+    .services .services-container .srv-box {
+      display: inline-flex;
+      width: 46%;
+      margin: 10px;
+      text-align: left;
+    }
+  }
+
 
 .services .services-container .srv-box i {
   font-size: 50px;
   align-self: flex-start;
+  margin-bottom: 20px;
 }
 
 .services .services-container .srv-box h3 {
   color: var(--main-color);
-  margin-left: 35px;
   margin-top: 0;
 }
 
-.services .services-container .srv-box p {
-  color: #777;
-  margin-left: 35px;
-}
+
 /* end services */
 /* start design  */
 .design {
@@ -387,7 +399,7 @@ header nav .search i {
   transform: translateY(-50%);
   width: 100%;
   padding: 50px;
-  background-color: rgb(15 116 143 / 70%);
+  background-color: var(--transparent-color);
   color: white;
 }
 
@@ -547,7 +559,7 @@ header nav .search i {
 
 .video .text {
   position: absolute;
-  background-color: rgb(15 116 143 / 70%);
+  background-color: var(--transparent-color);
   padding: 60px;
   text-align: center;
   top: 50%;
@@ -557,19 +569,19 @@ header nav .search i {
   color: white;
 }
 
-.text h3 {
+.video .text h3 {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.6rem;
   margin: 0;
 }
 
-.text p {
+.video .text p {
   text-transform: capitalize;
   margin: 0;
 }
 
-.text button {
+.video .text button {
   text-transform: uppercase;
   margin-top: 1rem;
   border: none;
@@ -579,6 +591,11 @@ header nav .search i {
 }
 /* end video  */
 /* start about us  */
+.about {
+  padding-bottom: 0;
+  padding-bottom: 0 !important;
+}
+
 .about img {
   max-width: 100%;
   position: relative;
@@ -586,6 +603,68 @@ header nav .search i {
   margin-top: -120px;
 }
 /* end about us  */
-/* start projects done */
+/* start stats*/
 
-/* end projects done */
+.stats {
+  background-image: url(/images/stats.webp);
+  background-size: cover;
+  position: relative;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.stats::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.700);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.stats .container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.stats .container .box {
+  flex-basis: 100%;
+  text-align: center;
+  background-color: var(--transparent-color);
+  padding: 50px;
+} 
+
+@media screen and (min-width: 768px) {
+  .stats .container .box {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .stats .container .box {
+    flex-basis: 25%;
+  }
+}
+
+.stats .container .box i {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.stats .container .box .number {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.stats .container .box p {
+  font-weight: 300;
+  color: white;
+  margin: 0;
+}
+/* end stats */
