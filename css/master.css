@@ -533,3 +533,46 @@ header nav .search i {
   margin-top: 25px;
 }
 /* end portfolio */
+/* start video  */
+.video {
+  position: relative;
+}
+
+.video video {
+  width: 100%;
+  filter: brightness(0.4);
+}
+
+.video .text {
+  position: absolute;
+  background-color: rgb(15 116 143 / 70%);
+  padding: 60px;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  line-height: 2;
+  color: white;
+}
+
+.text h3 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.text p {
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.text button {
+  text-transform: uppercase;
+  margin-top: 1rem;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+/* end video  */
