@@ -39,7 +39,9 @@ section:not(.landing) {
 
 .main-heading h2 + p {
   text-align: center;
-  margin-bottom: 70px;
+  margin: 0 auto 70px;
+  width: 550px;
+  line-height: 2;
 }
 
 .main-heading h2::before {
@@ -576,3 +578,14 @@ header nav .search i {
   padding: 10px;
 }
 /* end video  */
+/* start about us  */
+.about img {
+  max-width: 100%;
+  position: relative;
+  bottom: -120px;
+  margin-top: -120px;
+}
+/* end about us  */
+/* start projects done */
+
+/* end projects done */
