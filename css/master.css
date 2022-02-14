@@ -446,7 +446,9 @@ header nav .search i {
 
 .portfolio ul li{
   padding: 10px;
+  margin: 0 3px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .portfolio ul li:first-child{
@@ -517,5 +519,17 @@ header nav .search i {
   margin: 0;
   font-weight: normal;
   color: var(--main-color);
+}
+
+.portfolio a {
+  transform: translateX(-50%);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  display: inline;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 50%;
+  margin-top: 25px;
 }
 /* end portfolio */
