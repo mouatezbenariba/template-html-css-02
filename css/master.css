@@ -677,6 +677,7 @@ header nav .search i {
 
 .test-skills .testimonials {
   text-align: center;
+  position: relative;
 }
 
 .test-skills .testimonials h3 {
@@ -702,6 +703,7 @@ header nav .search i {
 
 .test-skills .testimonials .box img {
   width: 100px;
+  height: 100px;
   margin-bottom: 2rem;
   border-radius: 50%;
 }
@@ -736,7 +738,7 @@ header nav .search i {
   }
 }
 
-.test-skills .bullets {
+.test-skills .testimonials .bullets {
   list-style: none;
   display: flex;
   position: absolute;
@@ -744,9 +746,10 @@ header nav .search i {
   margin: 0;
   transform: translateX(-50%);
   padding: 0;
+  top: 105%;
 }
 
-.test-skills .bullets li {
+.test-skills .testimonials .bullets li {
   width: 20px;
   height: 20px;
   border: 1px solid #ddd;
@@ -754,14 +757,11 @@ header nav .search i {
   margin-left: 5px;
 }
 
-.test-skills .bullets li:nth-child(2) {
+.test-skills .testimonials .bullets li:nth-child(2) {
   background-color: var(--main-color);
 }
 /* end testimonials */
 /* start skills */
-.test-skills .skills {
-  text-align: center;
-}
 
 .test-skills .skills h3 {
   margin-bottom: 2rem;
@@ -769,52 +769,89 @@ header nav .search i {
   font-size: 1.3rem;
   text-transform: uppercase;
   padding-top: 4rem;
+  text-align: center;
 }
 
 .test-skills .skills p {
   margin-bottom: 3.5rem;
   color: #777;
   line-height: 2;
+  text-align: center;
 }
 
-.test-skills .lang h4 {
+.test-skills .skills .pro-lang .lang {
+  padding: 10px;
+}
+.test-skills .skills .pro-lang .lang h4 {
   margin-bottom: 1rem;
   font-weight: 400;
   text-transform: uppercase;
 }
-.test-skills .lang div {
+
+.test-skills .skills .lang .percentage {
+  background-color: #ddd;
   height: 2rem;
+  position: relative;
 }
 
-.test-skills .lang:first-child div, .test-skills .lang:last-child div {
-  background: linear-gradient(to right, var(--main-color) 90%, #ddd 90%);
-}
-
-.test-skills .lang:first-child div:before, .test-skills .lang:last-child div:before {
-  content: "90%";
-  width: 43px;
-  background-color: black;
-  display: inline-block;
+.test-skills .skills .lang .percentage span {
   position: absolute;
-  right: 10%;
-  bottom: 0;
-  transform: translateX(50%) translateY(-45px);
+  height: 100%;
+  background-color: var(--main-color);
+  left: 0;
+}
+
+.test-skills .skills .lang .percentage span::before {
+  content: attr(data-progress);
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+  bottom: 50px;
+  background-color: black;
   color: white;
-  text-align: center;
-  line-height: 29px;
-  border-radius: 21%;
-  padding: 2px 0;
+  padding: 5px 4px;
+  border-radius: 5px;
 }
 
-.test-skills .lang:first-child div:after, .test-skills .lang:last-child div:after {
+.test-skills .skills .lang .percentage span::after {
   content: "";
+  display: inline-block;
+  border: 10px solid;
+  border-color: black transparent transparent transparent;
+  position: absolute;
+  right: 0;
+  transform: translateX(50%);
+  bottom: 31px;
 }
 
-.test-skills .lang:nth-child(2) div {
-  background: linear-gradient(to right, var(--main-color) 85%, #ddd 85%);
+@media screen and (min-width: 992px) {
+  .test-skills .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .test-skills .testimonials {
+    width: 45%;
+    margin: 0;
+    position: relative;
+  }
+  .test-skills .testimonials .bullets {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin: 0;
+    transform: translateX(-50%);
+    padding: 0;
+    top: 97%;
+  }
+  .test-skills .skills {
+    text-align: center;
+    width: 45%;
+  }
+  .test-skills .skills h3 {
+    padding-top: 0;
+  }
+  .test-skills .skills .pro-lang {
+    text-align: left;
+  }
 }
-
-.test-skills .lang:nth-child(3) div {
-  background: linear-gradient(to right, var(--main-color) 80%, #ddd 80%);
-}
-/* end skills */
