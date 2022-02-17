@@ -1016,6 +1016,12 @@ header nav .search i {
   border: 1px solid white;
 }
 
+@media screen and (min-width="992px") {
+  .subscribe form {
+    display: flex;
+  }
+}
+
 .subscribe form i {
   position: absolute;
   top: 50%;
