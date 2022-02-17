@@ -900,13 +900,13 @@ header nav .search i {
 /* start pricing */
 .plans {
   display: grid;
-  gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .plan {
-  text-align: center;
   background-color: #eee;
+  text-align: center;
 }
 
 .plan .plan-head {
@@ -917,40 +917,40 @@ header nav .search i {
 }
 
 .plan .plan-head h3 {
+  margin: 0;
   padding: 20px 40px;
   font-weight: 400;
   font-size: 1.5rem;
   text-transform: capitalize;
-  margin: 0;
 }
 
 .plan .plan-head span {
-  font-size: 5rem;
   position: relative;
+  font-size: 5rem;
 }
 
 .plan ul {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .plan ul li {
-  padding: 20px;
-  text-transform: capitalize;
-  font-size: 1.2rem;
   position: relative;
+  padding: 20px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
 }
 
 .pricing .plans .plan ul li:not(:last-child)::before {
   content: "";
   position: absolute;
-  width: 175px;
-  height: 1px;
-  background-color: var(--main-color);
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: 175px;
+  height: 1px;
+  background-color: var(--main-color);
 }
 
 .pricing .plan .plan-foot {
@@ -960,10 +960,10 @@ header nav .search i {
 }
 
 .pricing .plan .plan-foot a {
-  text-decoration: none;
-  font-size: 1.2rem;
-  padding: 20px;  
   border: 1px solid var(--main-color);
+  padding: 20px;  
+  font-size: 1.2rem;
+  text-decoration: none;
   text-transform: capitalize;
 }
 
@@ -974,11 +974,11 @@ header nav .search i {
 
 .pricing .contact-us {
   display: block;
-  background-color: var(--main-color);
-  text-align: center;
-  padding: 20px;
   width: fit-content;
   margin: 0 auto;
+  padding: 20px;
+  background-color: var(--main-color);
+  text-align: center;
   text-decoration: none;
 }
 /* end pricing */
