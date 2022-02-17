@@ -596,6 +596,10 @@ header nav .search i {
   padding-bottom: 0 !important;
 }
 
+.about .container {
+  overflow: hidden;
+}
+
 .about img {
   max-width: 100%;
   position: relative;
