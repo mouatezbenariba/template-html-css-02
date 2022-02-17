@@ -896,3 +896,89 @@ header nav .search i {
   font-weight: 300;
 }
 /* end quote  */
+
+/* start pricing */
+.plans {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.plan {
+  text-align: center;
+  background-color: #eee;
+}
+
+.plan .plan-head {
+  border-bottom: 1px solid var(--main-color);
+  border-top: 1px solid var(--main-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.plan .plan-head h3 {
+  padding: 20px 40px;
+  font-weight: 400;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.plan .plan-head span {
+  font-size: 5rem;
+  position: relative;
+}
+
+.plan ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.plan ul li {
+  padding: 20px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.pricing .plans .plan ul li:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 175px;
+  height: 1px;
+  background-color: var(--main-color);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pricing .plan .plan-foot {
+  border-top: 1px solid var(--main-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.pricing .plan .plan-foot a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 20px;  
+  border: 1px solid var(--main-color);
+  text-transform: capitalize;
+}
+
+.pricing p {
+  margin: 2rem;
+  text-align: center;
+}
+
+.pricing .contact-us {
+  display: block;
+  background-color: var(--main-color);
+  text-align: center;
+  padding: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  text-decoration: none;
+}
+/* end pricing */
