@@ -459,8 +459,8 @@ header nav .search i {
 }
 
 .portfolio ul li{
-  padding: 10px;
   margin: 0 3px;
+  padding: 10px;
   font-weight: 400;
   cursor: pointer;
 }
@@ -765,10 +765,10 @@ header nav .search i {
 
 .test-skills .skills h3 {
   margin-bottom: 2rem;
+  padding-top: 4rem;
   font-weight: 400;
   font-size: 1.3rem;
   text-transform: uppercase;
-  padding-top: 4rem;
   text-align: center;
 }
 
@@ -789,39 +789,39 @@ header nav .search i {
 }
 
 .test-skills .skills .lang .percentage {
-  background-color: #ddd;
-  height: 2rem;
   position: relative;
+  height: 2rem;
+  background-color: #ddd;
 }
 
 .test-skills .skills .lang .percentage span {
   position: absolute;
+  left: 0;
   height: 100%;
   background-color: var(--main-color);
-  left: 0;
 }
 
 .test-skills .skills .lang .percentage span::before {
   content: attr(data-progress);
   position: absolute;
   right: 0;
-  transform: translateX(50%);
   bottom: 50px;
-  background-color: black;
-  color: white;
+  transform: translateX(50%);
   padding: 5px 4px;
   border-radius: 5px;
+  background-color: black;
+  color: white;
 }
 
 .test-skills .skills .lang .percentage span::after {
   content: "";
   display: inline-block;
-  border: 10px solid;
-  border-color: black transparent transparent transparent;
   position: absolute;
   right: 0;
-  transform: translateX(50%);
   bottom: 31px;
+  transform: translateX(50%);
+  border: 10px solid;
+  border-color: black transparent transparent transparent;
 }
 
 @media screen and (min-width: 992px) {
@@ -838,15 +838,15 @@ header nav .search i {
     list-style: none;
     display: flex;
     position: absolute;
-    left: 50%;
-    margin: 0;
-    transform: translateX(-50%);
-    padding: 0;
     top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
   }
   .test-skills .skills {
-    text-align: center;
     width: 45%;
+    text-align: center;
   }
   .test-skills .skills h3 {
     padding-top: 0;
