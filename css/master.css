@@ -40,7 +40,6 @@ section:not(.landing) {
 .main-heading h2 + p {
   text-align: center;
   margin: 0 auto 70px;
-  width: 550px;
   line-height: 2;
 }
 
