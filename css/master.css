@@ -986,11 +986,10 @@ header nav .search i {
   text-decoration: none;
 }
 /* end pricing */
-
 /* start subscribe  */
 .subscribe {
   position: relative;
-  background-image: url(../images/subscribe.webp);
+  background-image: url(/images/subscribe.webp);
   background-size: cover;
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -1008,18 +1007,18 @@ header nav .search i {
   height: 100%;
 }
 
+@media screen and (min-width:992px) {
+  .subscribe .container {
+    display: flex;
+  }
+}
+
 .subscribe form {
   position: relative;
   width: 500px;
   max-width: 100%;
   margin: auto;
   border: 1px solid white;
-}
-
-@media screen and (min-width="992px") {
-  .subscribe form {
-    display: flex;
-  }
 }
 
 .subscribe form i {
@@ -1056,5 +1055,15 @@ header nav .search i {
   margin-top: 2rem;
   margin-bottom: 0;
   font-weight: 300;
+}
+
+@media screen and (min-width: 992px) {
+  .subscribe p {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    margin-left: 40px;
+  }
 }
 /* end subscribe  */
