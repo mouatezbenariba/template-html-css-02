@@ -1067,3 +1067,79 @@ header nav .search i {
   }
 }
 /* end subscribe  */
+/* start contact  */
+.contact .content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.contact form {
+  flex-basis: 70%;
+}
+
+.contact .main-input {
+  display: block;
+  width: 100%;
+  margin-bottom: 23px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact textarea.main-input {
+  height: 170px;
+}
+
+.contact input[type="submit"] {
+  display: block;
+  border: 1px solid white;
+  padding: 20px;
+  background-color: var(--main-color);
+  color: white;
+  text-transform: uppercase;
+}
+
+.contact .info {
+  flex-basis: 25%;
+}
+
+.contact .info h4 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contact .info h4:nth-of-type(2) {
+  margin-top: 80px;
+}
+
+.contact .info span {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.contact .info address {
+  display: block;
+  margin-bottom: 10px;
+  color: #777;
+  line-height: 2;
+}
+
+@media screen and (max-width:768px) {
+  .contact .content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .contact form {
+    width: 100%;
+  }
+  .contact input[type="submit"] {
+    display: inline-block;
+  }
+  .contact .info h4:nth-of-type(2) {
+    margin-top: 40px;
+}
+}
+/* end contact  */
