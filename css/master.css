@@ -211,12 +211,7 @@ header nav .search i {
   }
 /* end Creating the drop menu using only html/css */
 
-  nav ul li:first-child a{
-    padding: 10px;
-    color: var(--main-color);
-  }
-
-  nav ul li:first-child {
+  header nav ul li a:hover {
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
   }
