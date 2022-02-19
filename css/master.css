@@ -188,11 +188,7 @@ header nav .search i {
     width: 100%;
     transition: 0.5s;
   }
-  header nav .menu:hover ~ ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
+
   header nav ul li:first-child {
     color: var(--main-color);
     border-color: var(--main-color);
@@ -206,6 +202,19 @@ header nav .search i {
     background-color: transparent;
     color: white;
   }
+/* start Creating the drop menu using only html/css */
+  header nav .menu:focus ~ ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav .menu ~ ul:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+/* end Creating the drop menu using only html/css */
 
   nav ul li:first-child a{
     padding: 10px;
