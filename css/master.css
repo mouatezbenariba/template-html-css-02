@@ -1148,7 +1148,7 @@ header nav .search i {
 /* start footer  */
 .footer {
   position: relative;
-  background-image: url("../images/subscribe.webp");
+  background-image: url(../images/subscribe.webp);
   background-size: cover;
   color: white;
   text-align: center;
