@@ -226,7 +226,7 @@ header nav .search i {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(/images/landing.webp);
+  background-image: url(../images/landing.webp);
   background-size: cover;
   filter: brightness(0.4);
 }
@@ -387,7 +387,7 @@ header nav .search i {
   width: 100%;
   height: 100%;
   background-color: #000000ba;
-  background-image: url(/images/design-features.webp);
+  background-image: url(../images/design-features.webp);
   filter: brightness(0.4);
 }
 .design .text {
@@ -612,7 +612,7 @@ header nav .search i {
 /* start stats*/
 
 .stats {
-  background-image: url(/images/stats.webp);
+  background-image: url(../images/stats.webp);
   background-size: cover;
   position: relative;
   padding-top: var(--section-padding);
@@ -866,7 +866,7 @@ header nav .search i {
 
 /* start quote  */
 .quote {
-  background-image: url(/images/quote.webp);
+  background-image: url(../images/quote.webp);
   background-size: cover;
   position: relative;
   padding-top: var(--section-padding);
@@ -992,7 +992,7 @@ header nav .search i {
 /* start subscribe  */
 .subscribe {
   position: relative;
-  background-image: url(/images/subscribe.webp);
+  background-image: url(../images/subscribe.webp);
   background-size: cover;
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
@@ -1148,7 +1148,7 @@ header nav .search i {
 /* start footer  */
 .footer {
   position: relative;
-  background-image: url(/images/subscribe.webp);
+  background-image: url(../images/subscribe.webp);
   background-size: cover;
   color: white;
   text-align: center;
