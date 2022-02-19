@@ -174,6 +174,7 @@ header nav .search i {
   .logo {
     padding: 26.8px 0;
   }
+  
   header nav ul {
     display: none;
     position: absolute;
@@ -183,6 +184,7 @@ header nav .search i {
     background-color: rgba(0, 0, 0, 0.431);
     z-index: 1;
   }
+
   header nav ul li {
     padding: 15px;
     width: 100%;
