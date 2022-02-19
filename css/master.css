@@ -9,6 +9,10 @@
   --section-padding: 100px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Work Sans', sans-serif;
 }
