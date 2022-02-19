@@ -191,7 +191,6 @@ header nav .search i {
   header nav ul li {
     padding: 15px;
     width: 100%;
-    transition: 0.5s;
   }
 
   header nav .menu {
@@ -216,15 +215,15 @@ header nav .search i {
   }
   /* end Creating the drop menu using only html/css */
 
-  nav ul li:first-child a{
-    padding: 10px;
-    color: var(--main-color);
-  }
-
   header nav ul li:hover {
-    color: var(--main-color);
-    border-color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
   }
+  
+  header nav ul li:hover a {
+    color: var(--main-color);
+    padding: 10px;
+    transition-duration: 0.5s;
+}
 }
 /* end header */
 
