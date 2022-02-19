@@ -158,7 +158,7 @@ header nav .search i {
   header nav ul li a {
     padding: 41px 10px;
   }
-  
+
   header nav ul li:first-child a{
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
@@ -194,7 +194,7 @@ header nav .search i {
     transition: 0.5s;
   }
 
-  header nav ul li:first-child {
+  header nav ul li:hover {
     color: var(--main-color);
     border-color: var(--main-color);
   }
