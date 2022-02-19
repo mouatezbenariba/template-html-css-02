@@ -194,11 +194,6 @@ header nav .search i {
     transition: 0.5s;
   }
 
-  header nav ul li:hover {
-    color: var(--main-color);
-    border-color: var(--main-color);
-  }
-
   header nav .menu {
     display: block;
     font-size: 1.25rem;
@@ -219,16 +214,16 @@ header nav .search i {
     flex-direction: column;
     align-items: flex-start;
   }
-/* end Creating the drop menu using only html/css */
+  /* end Creating the drop menu using only html/css */
 
   nav ul li:first-child a{
     padding: 10px;
     color: var(--main-color);
   }
 
-  nav ul li:first-child {
+  header nav ul li:hover {
     color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
+    border-color: var(--main-color);
   }
 }
 /* end header */
