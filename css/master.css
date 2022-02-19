@@ -158,13 +158,16 @@ header nav .search i {
   header nav ul li a {
     padding: 41px 10px;
   }
+  
   header nav ul li:first-child a{
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
   }
+
   .search {
     margin-left: 20px;
   }
+
   header nav .menu {
     display: none;
   }
@@ -174,7 +177,7 @@ header nav .search i {
   .logo {
     padding: 26.8px 0;
   }
-  
+
   header nav ul {
     display: none;
     position: absolute;
