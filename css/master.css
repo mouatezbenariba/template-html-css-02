@@ -159,7 +159,7 @@ header nav .search i {
     padding: 41px 10px;
   }
 
-  header nav ul li:first-child a{
+  header nav ul li a:hover{
     color: var(--main-color);
     border-bottom: 1px solid var(--main-color);
   }
