@@ -202,6 +202,9 @@ header nav .search i {
     display: block;
     font-size: 1.25rem;
     margin-right: 20px;
+    border-style: none;
+    background-color: transparent;
+    color: white;
   }
 
   nav ul li:first-child a{
