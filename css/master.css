@@ -189,11 +189,6 @@ header nav .search i {
     transition: 0.5s;
   }
 
-  header nav ul li:first-child {
-    color: var(--main-color);
-    border-color: var(--main-color);
-  }
-
   header nav .menu {
     display: block;
     font-size: 1.25rem;
