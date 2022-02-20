@@ -480,7 +480,7 @@ header nav .search i {
   cursor: pointer;
 }
 
-.portfolio ul li:first-child{
+.portfolio ul li:hover{
   background-color: var(--main-color);
   color: white;
 }
