@@ -29,7 +29,7 @@
 
 ### What I learned
 
-- Placing span at a specificr position in div : [source](https://stackoverflow.com/questions/5269147/placing-span-at-a-specificr-position-in-div)
+- Placing a span at a specific position in  a div : [source](https://stackoverflow.com/questions/5269147/placing-span-at-a-specificr-position-in-div)
 - "max-width:100%" means that the width can be anywhere between 0% and 100% but no more then 100% : [source](https://teamtreehouse.com/community/maxwidth-100#:~:text=%22width%22%20is%20a%20standard%20width,has%20a%201200px%20availible%20width.)
 - The difference between :focus and :active : [source](https://stackoverflow.com/questions/1677990/what-is-the-difference-between-focus-and-active)
 - How to add a Favicon : [source](https://www.w3schools.com/howto/howto_html_favicon.asp)
