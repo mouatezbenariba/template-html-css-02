@@ -270,11 +270,6 @@ header nav .search i {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .landing .intro h2{
-    margin-bottom: 15px;
-    font-size: 1.5rem;
-    line-height: 1.5;
-  }
 }
 
 .landing .intro h2, 
@@ -287,6 +282,14 @@ header nav .search i {
   font-size: 2rem;
   line-height: 2.6;
   margin-top: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .landing .intro h2{
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
 }
 
 .landing .intro p {
