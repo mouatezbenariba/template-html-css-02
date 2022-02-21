@@ -1147,7 +1147,7 @@ header nav .search i {
 }
 
 .contact .info span {
-  display: block;
+  display: inline-block;
   margin-bottom: 10px;
   color: rgb(47, 42, 42);
 }
