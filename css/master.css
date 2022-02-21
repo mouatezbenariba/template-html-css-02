@@ -265,7 +265,15 @@ header nav .search i {
   }
 }
 
-.landing .intro h2, .landing .intro p {
+@media screen and  (max-width: 576px) {
+  .landing .intro h2,
+  .landing .intro p {
+    margin: 0;
+  }
+}
+
+.landing .intro h2, 
+.landing .intro p {
   font-style: normal;
   font-weight: normal;
 }
