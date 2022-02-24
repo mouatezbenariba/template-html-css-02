@@ -16,7 +16,6 @@
 
 ### Links
 
-- Solution URL: [HTML/CSS Template 02](https://github.com/mouatezbenariba/template-html-css-02)
 - Live Site URL: [Kasper | Template](https://mouatezbenariba.github.io/template-html-css-02/)
 
 ### Built with
