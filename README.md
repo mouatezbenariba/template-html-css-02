@@ -32,17 +32,19 @@
 - "max-width:100%" means that the width can be anywhere between 0% and 100% but no more then 100% : [source](https://teamtreehouse.com/community/maxwidth-100#:~:text=%22width%22%20is%20a%20standard%20width,has%20a%201200px%20availible%20width.)
 - The difference between :focus and :active : [source](https://stackoverflow.com/questions/1677990/what-is-the-difference-between-focus-and-active)
 - How to add a Favicon : [source](https://www.w3schools.com/howto/howto_html_favicon.asp)
+- Adding Scheme.org tags (Google -SEO)
+- Adding OpenGraph meta tags (Facebook - SEO)
 
 ### Continued development
 
 Areas and concepts that I want to continue focusing on in future projects :
-  - Scheme.org tags (Google -SEO)
-  - OpenGraph meta tags (Facebook - SEO)
   - Developing Web Content for Safari (IOS Configuration)
 
 ### Useful resources
 - [Responsive Test Tool](https://responsivetesttool.com/)
 - [Schema.org reference](https://schema.org/)
+- [Open Graph Protocol](https://ogp.me/)
+- [Open Graph Facebook](https://developers.facebook.com/docs/sharing/webmasters/)
 - [Safari Web Content Guide](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/Introduction/Introduction.html#//apple_ref/doc/uid/TP40002051-CH1-SW1)
 - [Frontend Mentor](https://www.frontendmentor.io/resources/)
 - [Create a favicon](https://www.xiconeditor.com/)
