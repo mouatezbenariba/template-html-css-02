@@ -162,7 +162,6 @@ header nav .search i {
 
   header nav ul li a:hover{
     color: var(--main-color);
-    border-bottom: 1px solid var(--main-color);
   }
 
   .search {
