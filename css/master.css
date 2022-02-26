@@ -188,7 +188,7 @@ header nav .search i {
     top: 96px;
     left: 0;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.431);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
   }
 
