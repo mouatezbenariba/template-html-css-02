@@ -99,6 +99,7 @@ header {
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
+  background-color: rgb(29 66 76 / 70%);
 }
 
 @media screen and (max-width:768px) {
