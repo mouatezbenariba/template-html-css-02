@@ -95,7 +95,7 @@ section:not(.landing, .footer) {
 
 /* start header */
 header {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   left: 50%;
   transform: translateX(-50%);
@@ -142,10 +142,6 @@ header nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-header nav ul li {
-  padding: 40px 0;
 }
 
 header nav ul li a{
