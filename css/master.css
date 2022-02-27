@@ -1205,7 +1205,7 @@ header nav .search i {
   margin-bottom: 3rem;
 }
 
-.footer .social i:not(:first-child) {
+.footer .social a:not(:first-child) {
   margin-left: 2rem;
 }
 
