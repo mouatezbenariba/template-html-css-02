@@ -1219,7 +1219,7 @@ header nav .search i {
   font-weight: bold;
 }
 
-.footer:last-child p span {
+.footer p:last-child span {
   color: #e91e63;
   font-weight: bold;
 }
