@@ -1202,7 +1202,7 @@ header nav .search i {
 }
 
 .footer .social {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .footer .social i:not(:first-child) {
@@ -1219,7 +1219,7 @@ header nav .search i {
 }
 
 .footer p:last-child {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
   margin: 0;
 }
 
