@@ -1218,4 +1218,9 @@ header nav .search i {
   color: var(--main-color);
   font-weight: bold;
 }
+
+.footer:last-child p span {
+  color: #e91e63;
+  font-weight: bold;
+}
 /* end footer  */
