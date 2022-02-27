@@ -6,7 +6,7 @@
 ### The challenge
 
 - Build out the project (clone) to the design/website provided:
-  - [Kasper - One Page Creative HTML Theme](https://elzerowebschool.github.io/HTML_And_CSS_Template_Two/)
+  - [Kasper - One Page Creative HTML Theme](https://www.graphberry.com/item/kasper-one-page-creative-html-theme)
 
 ### Screenshot
 - Page Quality | web.dev : 
