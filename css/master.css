@@ -1209,6 +1209,19 @@ header nav .search i {
   margin-left: 2rem;
 }
 
+.footer .social a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .social a:hover {
+  color: var(--main-color);
+}
+
+.footer p a {
+  text-decoration: none;
+}
+
 .footer p:last-child {
   padding-bottom: 3rem;
   margin: 0;
